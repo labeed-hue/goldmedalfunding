@@ -5,58 +5,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Gold Medal Funding</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Extra styling for buttons & cards */
+    .btn-primary { background-color: #0B2C4D; color: white; padding: 12px 28px; border-radius: 8px; font-weight: 600; transition: all 0.3s; }
+    .btn-primary:hover { background-color: #0D3B63; }
+    .btn-secondary { background-color: #C9A227; color: #0B2C4D; padding: 12px 28px; border-radius: 8px; font-weight: 600; transition: all 0.3s; }
+    .btn-secondary:hover { background-color: #b7951e; }
+    .card { background-color: white; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.08); padding: 24px; transition: all 0.3s; }
+    .card:hover { transform: translateY(-5px); box-shadow: 0 12px 25px rgba(0,0,0,0.12); }
+  </style>
 </head>
 
-<body class="bg-white text-gray-800">
+<body class="bg-white text-gray-800 font-sans">
 
-<header class="bg-[#0B2C4D] text-white">
+<!-- HEADER -->
+<header class="bg-[#0B2C4D] text-white shadow">
   <div class="max-w-6xl mx-auto p-6 flex justify-between items-center">
     <h1 class="text-2xl font-bold">Gold Medal Funding</h1>
-    <a href="#apply" class="bg-[#C9A227] text-[#0B2C4D] px-5 py-2 rounded font-semibold">
-      Apply Now
-    </a>
+    <a href="#apply" class="btn-secondary">Apply Now</a>
   </div>
 </header>
 
-<section class="max-w-6xl mx-auto px-6 py-16 text-center">
-  <h2 class="text-4xl font-bold mb-4">Fast & Flexible Business Funding</h2>
-  <p class="text-lg mb-6">Working capital, lines of credit, and growth funding tailored for your business.</p>
-  <a href="#apply" class="bg-[#0B2C4D] text-white px-8 py-3 rounded-lg text-lg">Get Funded</a>
+<!-- HERO -->
+<section class="max-w-6xl mx-auto px-6 py-24 text-center">
+  <h2 class="text-5xl font-bold mb-6">Fast & Flexible Business Funding</h2>
+  <p class="text-lg mb-8">Working capital, lines of credit, and growth funding tailored for your business.</p>
+  <div class="flex justify-center gap-4">
+    <a href="#apply" class="btn-primary text-lg">Get Funded</a>
+    <a href="#apply" class="btn-secondary text-lg">Apply Now</a>
+  </div>
 </section>
 
-<section class="bg-[#F5F7FA] py-16">
-  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-4 gap-6 text-center">
-    <div class="bg-white p-6 rounded shadow">
-      <h3 class="font-bold text-xl mb-2">Apply</h3>
+<!-- STEPS -->
+<section class="bg-[#F5F7FA] py-20">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-4 gap-8 text-center">
+    <div class="card">
+      <h3 class="font-bold text-xl mb-3">Apply</h3>
       <p>Complete a quick online application in minutes.</p>
     </div>
-    <div class="bg-white p-6 rounded shadow">
-      <h3 class="font-bold text-xl mb-2">Submit Docs</h3>
+    <div class="card">
+      <h3 class="font-bold text-xl mb-3">Submit Docs</h3>
       <p>Upload bank statements and basic business info.</p>
     </div>
-    <div class="bg-white p-6 rounded shadow">
-      <h3 class="font-bold text-xl mb-2">Approval</h3>
+    <div class="card">
+      <h3 class="font-bold text-xl mb-3">Approval</h3>
       <p>We match you with the best funding option.</p>
     </div>
-    <div class="bg-white p-6 rounded shadow">
-      <h3 class="font-bold text-xl mb-2">Funded</h3>
+    <div class="card">
+      <h3 class="font-bold text-xl mb-3">Funded</h3>
       <p>Receive funds as fast as 24–48 hours.</p>
     </div>
   </div>
 </section>
 
-<section id="apply" class="max-w-4xl mx-auto px-6 py-16">
-  <h2 class="text-3xl font-bold mb-6 text-center">Apply Now</h2>
-  <form class="grid gap-4">
-    <input class="border p-3 rounded" placeholder="Business Name" required />
-    <input class="border p-3 rounded" placeholder="Owner Name" required />
-    <input type="email" class="border p-3 rounded" placeholder="Email" required />
-    <input class="border p-3 rounded" placeholder="Requested Amount" required />
-    <button class="bg-[#C9A227] text-[#0B2C4D] p-3 rounded font-bold">Submit Application</button>
-  </form>
+<!-- APPLY FORM (JotForm) -->
+<section id="apply" class="max-w-4xl mx-auto px-6 py-20">
+  <h2 class="text-3xl font-bold mb-8 text-center">Apply Now</h2>
+  <script src="https://form.jotform.com/jsform/242275281979065"></script>
 </section>
 
-<footer class="bg-[#0B2C4D] text-white text-center p-6">© 2025 Gold Medal Funding. All rights reserved.</footer>
+<!-- FOOTER -->
+<footer class="bg-[#0B2C4D] text-white text-center p-8 mt-12">
+  <p class="mb-2 font-semibold">Gold Medal Funding</p>
+  <p>© 2025 All rights reserved.</p>
+</footer>
 
 </body>
 </html>
+
+
